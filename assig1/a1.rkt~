@@ -1,0 +1,11 @@
+#lang scheme
+
+(define (twoEven a b c)
+  (if (even? a)
+      (if (or (even? b) (even? c))
+          #t
+          #f)
+      (if (and (even? b) (even? c))
+          #t
+          #f)
+   ))
